@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./fonts/FuturaPT/stylesheet.css">
     <link rel="stylesheet" href="./fonts/Montserrat/stylesheet.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css"> 
 </head>
 <body>
     <section class="about">
@@ -64,9 +65,112 @@
     </div>
 </section>
 
+<section class="details">
+    <h2>Добро пожаловать на самую большую выставку зарубежной недвижимости в России</h2>
+    <div class="detailsContainer">
+        <img src="./img/video_screenshot.png" alt="Видео">
+        <span><b>Мы проводим 37 международную выставку недвижимости,</b> первая из которых прошла 2003 году.</span>
+        <span>На выставке будет представлено <b>70 участников из более чем 20 стран мира,</b> среди них крупнейшие застройщики, агентства зарубежной недвижимости, финансово-инвестиционные компании.</span>
+        <span><b>Спикеры мирового уровня</b> дадут ряд лекций и поделятся своим опытом в развитии рынка недвижимости.</span>
+    </div>  
+<div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./img/slider_pic_1.jfif" alt="Фото из выставки"></div>
+      <div class="swiper-slide"><img src="./img/slider_pic_2.jfif" alt="Фото из выставки"></div>
+      <div class="swiper-slide"><img src="./img/slider_pic_3.jfif" alt="Фото из выставки"></div>
+    </div>
+    <div class="custom-button-prev">
+        <img src="./img/prev.png" alt="Prev">
+    </div>
+    <div class="custom-button-next">
+        <img src="./img/next.png" alt="Next"> 
+    </div>
+</section>
+
+<section class="benefit">
+    <h2>Получите больше от мероприятия</h2>
+    <div class="benefitContainer">
+        <div class="benefits">
+            <span>Спикеры мирового уровня</span>
+            <p>Узнайте новые возможности и решения от ведущих экономистов и профессионалов в сфере недвижимости</p>
+            <img src="./img/01.svg" alt="01" id="Corner1">
+        </div>
+        <div class="benefits">
+            <span>Инвестиционные возможности</span>
+            <p>Идеальное мероприятие для инвесторов, управляющих активами и состоятельных людей, желающих открыть для себя новые возможности для инвестиций</p>
+            <img src="./img/02.svg" alt="02" id="Corner2">
+        </div>
+        <div class="benefits">
+            <span>Полезные знакомства</span>
+            <p>Познакомьтесь с ведущими экспертами отрасли и вместе найдите решения и возможности для решения текущих рыночных задач во всех секторах недвижимости</p>
+            <img src="./img/03.svg" alt="03" id="Corner3">
+        </div>
+    </div>
+</section>
+<section class="audience">
+    <h2>кому будет полезно?</h2>
+    <div class="audienceContainer">
+        <div class="audiences">
+            <img src="./img/invester_logo.png" alt="Инвесторы">
+            <span>Инвесторы</span>
+        </div>
+        <div class="audiences">
+            <img src="./img/flipping_logo.png" alt="Лого">
+            <span>Люди, которые хотят<br> переехать</span>
+        </div>
+        <div class="audiences">
+            <img src="./img//agents_logo.png" alt="Риэлторы">
+            <span>Профессиональные<br> риелторы</span>
+        </div>
+    </div>
+</section>
+<section class="partners">
+    <h2>О партнере выставки</h2>
+    <span>Key One Realty — ключевой партнер выставки</span>
+    <p>Наша команда работает в сфере недвижимости <b>более 15 лет</b> и обслуживает множество разных клиентов <b>из всех слоев общества.</b> </p>
+    <div class="partersText">Мы предоставляем <b>полный спектр услуг,</b> от покупки до полного удаленного управления вашим объектом, а наши индивидуальные решения дадут вам <b>уникальный опыт,</b> который заставит вас вернуться снова.</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     <script src="./main.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script> 
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+  direction: 'horizontal', 
+  loop: true,
+
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true, }, 
+
+  navigation: {
+    nextEl: '.custom-button-next',
+    prevEl: '.custom-button-prev',
+  },
+
+  
+
+}); 
+    </script>
 </body>
 </html>
