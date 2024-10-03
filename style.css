@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+body {
+    color: #101010; 
+}
+
+section {
+    margin-bottom: calc(100px + (150 - 100) * ((100vw - 375px) / (1280 - 375)));
+    padding: 0 calc(38px + (108 - 38) * ((100vw - 375px) / (1280 - 375)));;
+
+}
+
+.about {
+    background-image: url(./img/window-business-building.png);
+    background-size: 110%;   
+    height: 840px;    
+    background-repeat: no-repeat; 
+} 
+
+.about img {
+    margin-top: calc(45px + (67 - 45) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.navigation {
+    float: right; 
+    margin-top: 15px;  
+}
+
+.ellipse {
+    width: 6px;
+    height: 6px;
+    margin-left: 14px; 
+    margin-right: 14px;
+}
+
+.exhibition, .schedule, .contacts {
+    background: none;
+    color: white; 
+    border: none;
+    font-size: 18px;
+    line-height: 121%; 
+}
+
+.exhibition:hover {
+    color: #EB177E;
+    border-bottom: 1px solid #EB177E; 
+    cursor: pointer;
+}
+
+.exhibition:active {
+    color: #EB177E;
+    border-bottom: none; 
+    font-weight: 600; 
+}
+
+.schedule:hover {
+    color: #EB177E;
+    border-bottom: 1px solid #EB177E; 
+    cursor: pointer;
+}
+
+.schedule:active {
+    color: #EB177E;
+    border-bottom: none; 
+    font-weight: 600; 
+}
+
+.contacts:hover {
+    color: #EB177E;
+    border-bottom: 1px solid #EB177E; 
+    cursor: pointer;
+}
+
+.contacts:active {
+    color: #EB177E;
+    border-bottom: none; 
+    font-weight: 600; 
+}
+
+.entry {
+    background: #EB177E;
+    color: white; 
+    border: none;
+    font-size: 13px;
+    line-height: 121%;  
+    width: 147px;
+    height: 36.48px;
+    margin-left: 25px; 
+}
+
+.entry:hover {
+    background: white;
+    color: #EB177E; 
+    cursor: pointer;
+}
+
+.entry:active {
+    background: #EB177E;
+    color: white; 
+    cursor: pointer;
+    opacity: 51%; 
+}
+
+.navigation {
+    float: right; 
+    margin-top: 15px;  
+}
+
+.burger-menu {
+    display: none; 
+    /* position: absolute;  */
+    top: 100px;
+    right: 10;
+    background: rgba(0, 0, 0, 0.8); 
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0; 
+    z-index: 1000; 
+}
+
+.burger-menu.show {
+    display: block; 
+    opacity: 1; 
+}
+
+.burger-menu button {
+    flex: 1 1 calc(50% - 10px); 
+    margin: 5px; 
+    box-sizing: border-box; 
+}
+
+.ellipse {
+    width: 6px;
+    height: 6px;
+    margin-left: 14px; 
+    margin-right: 14px;
+}
+
+#Burger {
+    display: none;
+}
+
+#Burger:active {
+    background-color: #0000004F;
+    backdrop-filter: blur(9.275362014770508px);
+    padding: 2px; 
+    border-radius: 2px;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 64px;
+}
+
+.date {
+    font-size: calc(20px + (28 - 20) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 122%;
+    color: white; 
+    background-color: #0000004F;
+    backdrop-filter: blur(9.275362014770508px);
+    width: auto;
+    height: 55px;
+    align-content: center; 
+    padding-left: 25px;  
+    padding-right: 25px;  
+} 
+
+.about h1 {
+    font-family: 'Futura PT';
+    font-size: calc(40px + (70 - 40) * ((100vw - 375px) / (1280 - 375)));
+    width: calc(311px + (819 - 311) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 106%;
+    text-align: center;
+    color: white; 
+    margin-top: calc(32px + (24 - 32) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.adress {
+    font-size: calc(16px + (24 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 121%;
+    color: white; 
+    background-color: #0000004F;
+    backdrop-filter: blur(9.275362014770508px);
+    width: auto; 
+    height: 55px;
+    align-content: center; 
+    padding-left: 25px;
+    padding-right: 25px;  
+    margin-top: 34px; 
+}
+
+.aboutContainer .entry {
+    font-size: calc(20px + (24 - 20) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 121%;  
+    width: calc(220px + (270 - 220) * ((100vw - 375px) / (1280 - 375)));
+    height: calc(50px + (67 - 50) * ((100vw - 375px) / (1280 - 375)));
+    margin-top: calc(60px + (65 - 60) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.aboutContainer span {
+    font-size: calc(14px + (16 - 14) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 121%; 
+    text-align: center;
+    color: white; 
+    margin-top: calc(9px + (17 - 9) * ((100vw - 375px) / (1280 - 375)));
+    width: calc(158px + (394 - 158) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.digit {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.digits span {
+    font-family: 'Futura PT';
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 128%; 
+    color: #282828;
+} 
+
+.digits p {
+    font-size: 30px;
+    line-height: 121%;
+    color: #1010108F; 
+    text-transform: uppercase; 
+}
+
+#rectangleMobile {
+    display: none; 
+}
+
+
+
+
+
+
+@media (max-width: 400px) {
+
+    .aboutContainer {
+        display: block;
+        align-content: center;
+        text-align: center;
+        align-items: center; 
+        margin-top: 45px; 
+    }
+
+    .navigation {
+        display: none; 
+    }
+
+    .aboutContainer span {
+        display: block; 
+        text-align: center;
+        margin-left: 70px; 
+    }
+
+    .entry {
+        margin-left: 0;
+    }
+
+    .about {
+        background-image: url(./img/window-business-building-dekstop.png);
+        background-size: 100%;   
+        background-repeat: no-repeat; 
+        width: auto; 
+    } 
+
+    .digit {
+        flex-direction: column; 
+        flex-wrap: nowrap;
+        justify-content: center; 
+    }
+
+    #rectangleDekstop {
+        display: none;
+    }
+
+    #rectangleMobile {
+        display: inline; 
+        margin-top: 40px;
+        margin-bottom: 40px; 
+    }
+
+    .navigation {
+        display: none; 
+    }
+    
+    #Burger {
+        display: inline; 
+        cursor: pointer;
+        float: right; 
+    }
+    
+    .burger-menu {
+        display: none; 
+    }
+
+    .burger-menu.show {
+        display: block; 
+        opacity: 1; 
+    }
+
+}
+
