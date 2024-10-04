@@ -821,6 +821,61 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 
+.formName, .formSurname, .formEmail, .formPhone {
+    position: relative; 
+}
+
+input {
+    width: 100%;
+    padding-right: 30px; 
+    background-color: #282828;
+    border: none;
+    border-bottom: 1px solid rgba(229, 229, 229, 0.6); 
+    padding: 6.5px;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+input.errorInput {
+    border-bottom: 1px solid red;
+    color: red;
+}
+
+input.validInput {
+    border-bottom: 1px solid green; 
+    color: green;
+}
+
+.icon-status {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    display: none; 
+}
+
+.errorInput + .icon-status {
+    color: red;
+    display: inline-block;
+}
+
+.validInput + .icon-status {
+    color: green;
+    display: inline-block;
+}
+
+.errorInput + .icon-status::before {
+    content: url(./img/false.png); 
+}
+
+.validInput + .icon-status::before {
+    content: url(./img/right.png); 
+} 
+
 
 @media (max-width: 400px) {
 
