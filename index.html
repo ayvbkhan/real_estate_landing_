@@ -13,22 +13,22 @@
     <section class="about">
         <img src="./img/logo-light.png" alt="KEYONE Realty Group">
         <div class="navigation">
-            <button class="exhibition">О выставке</button>
+            <button class="exhibition" onclick="location.href='#details'">О выставке</button>
             <img src="./img/Ellipse.svg" alt="" class="ellipse"> 
-            <button class="schedule">Расписание</button>
+            <button class="schedule" onclick="location.href='#dates'">Расписание</button>
             <img src="./img/Ellipse.svg" alt="" class="ellipse"> 
-            <button class="contacts">Контакты</button> 
-            <button class="entry">РЕГИСТРАЦИЯ</button>
+            <button class="contacts" onclick="location.href='#informations'">Контакты</button> 
+            <button class="entry" onclick="location.href='#regist'">РЕГИСТРАЦИЯ</button>
             
         </div>
         <img src="./img/burger_icon.svg" alt="Menu" id="Burger"> 
 
 
         <div class="burger-menu" id="burgerMenu">
-            <button class="exhibition">О выставке</button>
-            <button class="schedule">Расписание</button>
-            <button class="contacts">Контакты</button>
-            <button class="entry">РЕГИСТРАЦИЯ</button>
+            <button class="exhibition" onclick="location.href='#details'">О выставке</button>
+            <button class="schedule" onclick="location.href='#dates'">Расписание</button>
+            <button class="contacts"onclick="location.href='#informations'">Контакты</button>
+            <button class="entry" onclick="location.href='#regist'">РЕГИСТРАЦИЯ</button>
         </div> 
 
 
@@ -36,7 +36,7 @@
             <div class="date">11 и 12 ноября 2022</div>
             <h1>Московская международная выставка недвижимости</h1>
             <div class="adress">Москва, Тишинская площадь, 1, стенд №21</div>
-            <button class="entry">РЕГИСТРАЦИЯ</button>
+            <button class="entry" onclick="location.href='#regist'">РЕГИСТРАЦИЯ</button>
             <span>* Вход бесплатный по предварительной регистрации</span>
         </div>
     </section>
@@ -65,13 +65,13 @@
     </div>
 </section>
 
-<section class="details">
+<section class="details" id="details">
     <h2>Добро пожаловать на самую большую выставку зарубежной недвижимости в России</h2>
     <div class="detailsContainer">
         <img src="./img/video_screenshot.png" alt="Видео">
-        <span><b>Мы проводим 37 международную выставку недвижимости,</b> первая из которых прошла 2003 году.</span>
-        <span>На выставке будет представлено <b>70 участников из более чем 20 стран мира,</b> среди них крупнейшие застройщики, агентства зарубежной недвижимости, финансово-инвестиционные компании.</span>
-        <span><b>Спикеры мирового уровня</b> дадут ряд лекций и поделятся своим опытом в развитии рынка недвижимости.</span>
+        <div class="detailsBorder"><span><b>Мы проводим 37 международную выставку недвижимости,</b> первая из которых прошла 2003 году.</span></div>
+        <div class="detailsBorder"><span>На выставке будет представлено <b>70 участников из более чем 20 стран мира,</b> среди них крупнейшие застройщики, агентства зарубежной недвижимости, финансово-инвестиционные компании.</span></div>
+        <div class="detailsBorder"><span><b>Спикеры мирового уровня</b> дадут ряд лекций и поделятся своим опытом в развитии рынка недвижимости.</span></div>
     </div>  
 <div class="swiper">
     <div class="swiper-wrapper">
@@ -90,20 +90,26 @@
 <section class="benefit">
     <h2>Получите больше от мероприятия</h2>
     <div class="benefitContainer">
+        <div class="benefitsBorder">
         <div class="benefits">
             <span>Спикеры мирового уровня</span>
             <p>Узнайте новые возможности и решения от ведущих экономистов и профессионалов в сфере недвижимости</p>
             <img src="./img/01.svg" alt="01" id="Corner1">
         </div>
+        </div>
+        <div class="benefitsBorder">
         <div class="benefits">
             <span>Инвестиционные возможности</span>
             <p>Идеальное мероприятие для инвесторов, управляющих активами и состоятельных людей, желающих открыть для себя новые возможности для инвестиций</p>
             <img src="./img/02.svg" alt="02" id="Corner2">
         </div>
+        </div>
+        <div class="benefitsBorder">
         <div class="benefits">
             <span>Полезные знакомства</span>
             <p>Познакомьтесь с ведущими экспертами отрасли и вместе найдите решения и возможности для решения текущих рыночных задач во всех секторах недвижимости</p>
             <img src="./img/03.svg" alt="03" id="Corner3">
+        </div>
         </div>
     </div>
 </section>
@@ -130,8 +136,72 @@
     <p>Наша команда работает в сфере недвижимости <b>более 15 лет</b> и обслуживает множество разных клиентов <b>из всех слоев общества.</b> </p>
     <div class="partersText">Мы предоставляем <b>полный спектр услуг,</b> от покупки до полного удаленного управления вашим объектом, а наши индивидуальные решения дадут вам <b>уникальный опыт,</b> который заставит вас вернуться снова.</div>
 </section>
+<section class="dates" id="dates">
+    <h2>Время проведения</h2>
+    <div class="days">
+        <div class="day">11 ноября 12:00 – 19:00</div>
+        <div class="day">12 ноября 11:00 – 19:00 </div>
+    </div>
+    <div class="registrationBorder">
+        <div class="registration" id="regist">
+            <span>Регистрация на мероприятие</span>
+            <p>Вход на мероприятие бесплатный по предварительной регистрации</p>
+            <form action="">
+                <div class="formName">
+                <input type="text" name="username" placeholder="Имя">
+                <div class="error">Слишком короткое имя</div>
+                </div>
+                <div class="formSurname">
+                <input type="text" name="usersurname" placeholder="Фамилия">
+                <div class="error">Слишком короткая Фамилия</div>
+                </div>
+                <div class="formEmail">
+                <input type="email" name="useremail" placeholder="Email">
+                <div class="error">Неверный формат</div>
+                </div>
+                <div class="formPhone">
+                <input type="number" name="userphone" placeholder="Телефон">
+                <div class="error">Неверный формат</div>
+                </div>
+            </form>
+            <button class="singin">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </div>
+            <div class="popUp">
+                <img src="./img/close.svg" alt="Закрыть">
+                <h3>Ваша заявка успешно отправлена!</h3>
+            </div>
+    </div>
+</section>
+<section class="map">
+    <h2>схема проезда</h2>
+    <img src="./img/Rectangle_map.svg" alt="Line" id="lineMap">
+    <div class="day">Адрес: Москва, Тишинская площадь, 1</div>
+    <img src="./img/map_pic.png" alt="Карта" id="mapPic">
+    <div class="mapContainer">
+        <span>Как доехать на машине:</span>
+        <p>от площади Белорусского вокзала по ул. 2-я Брестская (одностороннее движение) на 2-м светофоре - поворот направо, на ул. Васильевская, которая выходит на Тишинскую площадь. ТВК "Тишинка" видно прямо по ходу движения в конце ул. Васильевской.</p>
+        <span>На общественном транспорте:</span>
+        <p>м. Белорусская-кольцевая, выход к Белорусскому вокзалу, остановка автобуса около аптеки (2-я Брестская д.43), далее на автобусах №166 или №366, 2-я остановка - "Тишинская площадь".</p>
+        <span>Пешком:</span>
+        <p>м. Белорусская-кольцевая, выход к Белорусскому вокзалу, направо к перекрестку, далее по ул. 2-я Брестская  до первого светофора, направо по ул. Большая Грузинская до первого светофора, далее налево через Тишинскую площадь</p>
+    </div>
+</section>
+<section class="lastOffer">
+    <h2>Последние предложения</h2>
+    <div class="lastOfferContainer">
+        <span>Новые предложения<br> недвижимости</span>
+        <span>от Key One Realty</span> 
+        <button class="newOffer">Посмотреть предложения</button>
+    </div>
+</section>
 
-
+<section class="informations" id="informations"> 
+    <img src="./img/logo-dark.png" alt="Логотип" id="logoDark">
+    <div class="information">11 и 12 Ноября 2022</div>
+    <div class="information">Москва, Тишинская площадь, 1, стенд №21</div>
+    <div class="information"><img src="./img/phone_logo.png" alt="Tel">+97142089111 <span><img src="./img/mail_logo.png" alt="Email"> info@keyonerealtygroup.com</span></div>
+    <div class="information" id="lastInformation">© Copyright 2022 - Key One Realty Group</div>
+</section>
 
 
 
