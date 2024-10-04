@@ -884,7 +884,10 @@ input.validInput {
     line-height: 121%;  
     width: 147px;
     height: 36.48px;
-    margin-left: 15px; 
+    display: block; 
+    position: absolute;
+    margin-top: 5px; 
+
 }
 
 #themeToggle:hover {
