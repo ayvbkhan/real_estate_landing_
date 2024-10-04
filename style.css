@@ -876,6 +876,98 @@ input.validInput {
     content: url(./img/right.png); 
 } 
 
+#themeToggle {
+    background: black;
+    color: white; 
+    border: none;
+    font-size: 13px;
+    line-height: 121%;  
+    width: 147px;
+    height: 36.48px;
+    margin-left: 15px; 
+}
+
+#themeToggle:hover {
+    background: white;
+    color: black; 
+    cursor: pointer;
+}
+
+#themeToggle:active {
+    background: rgb(110, 108, 108);
+    color: white; 
+    cursor: pointer;
+    opacity: 51%; 
+}
+
+body.night-mode {
+    background-color: rgba(16, 16, 16, 1); 
+    color: #FFFFFF; 
+}
+
+body.night-mode h1,
+body.night-mode h2,
+body.night-mode h3,
+body.night-mode p,
+body.night-mode a,
+body.night-mode span {
+    color: #FFFFFF; 
+}
+
+body.night-mode .digits p {
+    color: rgba(255, 255, 255, 0.58); 
+}
+
+body.night-mode .container {
+    background-color: rgba(16, 16, 16, 1); 
+}
+
+body.night-mode .text {
+    color: #FFFFFF; 
+}
+
+body.night-mode .box {
+    background-color: rgba(255, 255, 255, 0.58); 
+}
+
+body.night-mode .detailsContainer span {
+    background-color: rgba(40, 40, 40, 1); 
+}
+
+body.night-mode .benefit {
+    background-image: none; 
+}
+
+body.night-mode .mapContainer {
+    background-color: rgba(40, 40, 40, 1); 
+}
+
+body.night-mode .background {
+    background-color: #FFFFFF; 
+}
+
+body.night-mode .text-alt {
+    color: #282828; 
+}
+
+body.night-mode .shadow {
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 1); 
+}
+
+body.night-mode .background-light {
+    background-color: rgba(40, 40, 40, 1); 
+}
+
+body.night-mode .shadow-light {
+    box-shadow: 0 4px 6px rgba(77, 77, 77, 0.56); 
+}
+
+
+section.benefit,
+section.partners {
+    background-color: initial; 
+}
+
 
 @media (max-width: 400px) {
 

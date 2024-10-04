@@ -82,3 +82,16 @@ document.querySelector('.popUp img').addEventListener('click', function() {
     document.querySelector('.popUp').style.display = 'none';
     document.querySelector('.registration').style.display = 'block';
 }); 
+
+
+const themeToggle = document.getElementById('themeToggle');
+
+
+themeToggle.addEventListener('click', function() {
+    
+    document.body.classList.toggle('night-mode');
+});
+
+
+document.body.classList.remove('night-mode');
+ 
