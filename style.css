@@ -267,8 +267,7 @@ section {
     margin-bottom: calc(62px + (118 - 62) * ((100vw - 375px) / (1280 - 375)));
 }
 
-.detailsContainer img {
-    width: calc(300px + (602 - 300) * ((100vw - 375px) / (1280 - 375)));
+.youtubeVideo {
     grid-column: 1 / 2;
     grid-row: 1 / 3; 
 }
@@ -699,12 +698,12 @@ input[type=number]::-webkit-inner-spin-button {
 .map .day {
     width: calc(310px + (525 - 310) * ((100vw - 375px) / (1280 - 375)));
     margin-bottom: 58px;
-    margin-left: calc(30px + (260 - 30) * ((100vw - 375px) / (1280 - 375)));
+    margin-left: calc(30px + (235 - 30) * ((100vw - 375px) / (1280 - 375)));
 }
 
-#mapPic {
+.googleMap {
     width: calc(315px + (860 - 315) * ((100vw - 375px) / (1280 - 375)));
-    margin-left: calc(30px + (100 - 30) * ((100vw - 375px) / (1280 - 375)));
+    margin-left: calc(30px + (110 - 30) * ((100vw - 375px) / (1280 - 375)));
     margin-bottom: calc(66px + (98 - 66) * ((100vw - 375px) / (1280 - 375)));
 }
 
@@ -886,7 +885,9 @@ input.validInput {
     height: 36.48px;
     display: block; 
     position: absolute;
-    margin-top: 5px; 
+    margin-top: 20px; 
+    margin-left: 972px; 
+    border-radius: 20px; 
 
 }
 
@@ -1044,10 +1045,11 @@ section.partners {
         gap: 20px; 
     }
 
-    .detailsContainer img {
+    .youtubeVideo {
         order: 3;
         margin-top: 15px; 
-
+        width: 300px;
+        height: 177.28px;
     }
 
     .swiper {
@@ -1162,5 +1164,32 @@ section.partners {
         margin-top: calc(16px + (25 - 16) * ((100vw - 375px) / (1280 - 375)));
     }
 
+    #themeToggle {
+        margin-top: 10px; 
+        margin-left: 25px; 
+        font-size: 10px; 
+        width: 120px;
+        height: 30px;
+        background: white;
+        color: black; 
+
+    }
+
+    #themeToggle:hover {
+        background: rgb(110, 108, 108);
+        color: white; 
+        cursor: pointer;
+    }
+    
+    #themeToggle:active {
+        background: white;
+        color: black;  
+        cursor: pointer;
+        opacity: 51%; 
+    }
+
+    .googleMap {
+        height: 207px;
+    }
 
 }

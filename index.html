@@ -12,8 +12,8 @@
 </head>
 <body>
     <section class="about">
+        <button id="themeToggle">Переключить тему</button>
         <img src="./img/logo-light.png" alt="KEYONE Realty Group">
-         
         <div class="navigation">
             <button class="exhibition" onclick="location.href='#details'">О выставке</button>
             <img src="./img/Ellipse.svg" alt="" class="ellipse"> 
@@ -22,18 +22,13 @@
             <button class="contacts" onclick="location.href='#informations'">Контакты</button> 
             <button class="entry" onclick="location.href='#regist'">РЕГИСТРАЦИЯ</button>
         </div>
-        <button id="themeToggle">Переключить тему</button> 
         <img src="./img/burger_icon.svg" alt="Menu" id="Burger"> 
-
-
         <div class="burger-menu" id="burgerMenu">
             <button class="exhibition" onclick="location.href='#details'">О выставке</button>
             <button class="schedule" onclick="location.href='#dates'">Расписание</button>
             <button class="contacts"onclick="location.href='#informations'">Контакты</button>
             <button class="entry" onclick="location.href='#regist'">РЕГИСТРАЦИЯ</button>
         </div> 
-
-
         <div class="aboutContainer">
             <div class="date">11 и 12 ноября 2022</div>
             <h1>Московская международная выставка недвижимости</h1>
@@ -70,7 +65,17 @@
 <section class="details" id="details">
     <h2>Добро пожаловать на самую большую выставку зарубежной недвижимости в России</h2>
     <div class="detailsContainer">
-        <img src="./img/video_screenshot.png" alt="Видео">
+        <iframe 
+            width="602" 
+            height="342" 
+            src="https://www.youtube.com/embed/Ee-hhSgOsN0?si=-t6FlGy-xhRMxGz6" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen 
+            class="youtubeVideo">
+        </iframe>
         <div class="detailsBorder"><span><b>Мы проводим 37 международную выставку недвижимости,</b> первая из которых прошла 2003 году.</span></div>
         <div class="detailsBorder"><span>На выставке будет представлено <b>70 участников из более чем 20 стран мира,</b> среди них крупнейшие застройщики, агентства зарубежной недвижимости, финансово-инвестиционные компании.</span></div>
         <div class="detailsBorder"><span><b>Спикеры мирового уровня</b> дадут ряд лекций и поделятся своим опытом в развитии рынка недвижимости.</span></div>
@@ -183,7 +188,15 @@
     <h2>схема проезда</h2>
     <img src="./img/Rectangle_map.svg" alt="Line" id="lineMap">
     <div class="day">Адрес: Москва, Тишинская площадь, 1</div>
-    <img src="./img/map_pic.png" alt="Карта" id="mapPic">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.0482070564744!2d37.58291695364387!3d55.769080550644915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a3ab9f2913b%3A0x3026af4eb3d46b17!2z0KLQuNGI0LjQvdGB0LrQsNGPINC_0LsuLCAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTIzMDU2!5e0!3m2!1sru!2s!4v1728112418193!5m2!1sru!2s" 
+    width="860" 
+    height="459" 
+    style="border:0; border-radius: 20px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade" 
+    class="googleMap">
+    </iframe> 
     <div class="mapContainer">
         <span>Как доехать на машине:</span>
         <p>от площади Белорусского вокзала по ул. 2-я Брестская (одностороннее движение) на 2-м светофоре - поворот направо, на ул. Васильевская, которая выходит на Тишинскую площадь. ТВК "Тишинка" видно прямо по ходу движения в конце ул. Васильевской.</p>
@@ -209,6 +222,7 @@
     <div class="information"><img src="./img/phone_logo.png" alt="Tel">+97142089111 <span><img src="./img/mail_logo.png" alt="Email"> info@keyonerealtygroup.com</span></div>
     <div class="information" id="lastInformation">© Copyright 2022 - Key One Realty Group</div>
 </section>
+
 
 
 
